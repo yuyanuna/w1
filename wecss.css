@@ -1,14 +1,69 @@
-/* 這裡是 CSS，用於簡單的樣式設定 */
-body {
-    font-family: Arial, sans-serif;
+/* 這裡是 CSS，用於整體置中和框框樣式 */
+body, html {
+    font-family: 標楷體, sans-serif;
+    height: 100%;
+    margin: 0;
+    background-color: gainsboro;
 }
-#inputBox {
-    margin-bottom: 10px;
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
 }
-#itemList {
-    list-style-type: none;
-    padding: 0;
+
+.center-box {
+    border: 5px solid #cccccc;
+    background-color: silver;
+    padding: 20px;
+    text-align: center;
+    max-width: 600px;
+    width: 90%;
+
 }
-.item {
-    margin-bottom: 5px;
+
+.img {
+    float: right;
+    margin-left: 10px; /* 調整圖示與文字之間的間距 */
+}
+
+
+input {
+    width: 90%; /* 將輸入框的寬度設置為 70% */
+    margin-bottom: 30px; /* 增加底部間距 */
+    font-family: 標楷體, sans-serif;
+}
+
+/* 新增 CSS 來設定顯示輸入資料的樣式 */
+.task-item {
+    text-align: left; /* 對齊左側 */
+    margin-bottom: 10px; /* 增加底部間距 */
+    display: flex; /* 使用 Flexbox 來排列元素 */
+    align-items: center; /* 垂直置中 */
+    justify-content: space-between; /* 左右對齊 */
+
+}
+
+.task-item button {
+    margin-left: 10px; /* 按鈕間的間距 */
+    text-align: right; /* 按鈕右對齊 */
+    background-color: transparent; /* 設置背景為透明 */
+    border: none; /* 移除邊框 */
+    cursor: pointer; /* 變換滑鼠指標為手形 */
+}
+
+.task-item button img {
+    width: 20px; /* 圖示的寬度 */
+    height: 20px; /* 圖示的高度 */
+}
+
+#clearButton {
+    color: red; /* 設置文字顏色為紅色 */
+    font-family: 標楷體, sans-serif;
+    background-color: transparent; /* 設置背景為透明 */
+    border: none; /* 移除邊框 */
+    cursor: pointer; /* 變換滑鼠指標為手形 */
 }

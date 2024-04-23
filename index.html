@@ -4,14 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo List</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="wecss.css">
+
 </head>
 <body>
-<h1>ToDo List</h1>
-<label for="taskInput">請輸入任務：</label>
-<input type="text" id="taskInput" placeholder="例如：買早餐">
-<button id="addTaskButton">新增任務</button>
+<div class="container">
+    <div class="center-box">
+        <h1>待辦事項清單</h1>
+        <form id="taskForm">
+            <input type="text" id="taskInput" placeholder="例如：買早餐">
+            <button type="submit">送出</button>
+        </form>
+        <div id="taskDisplay"></div> <!-- 用來顯示輸入的資料的區域 -->
+        <button id="clearButton">清除所有項目</button>
+    </div>
+</div>
 
-<script src="script.js"></script>
+
+<script src="wee.js"></script>
+
 </body>
 </html>
