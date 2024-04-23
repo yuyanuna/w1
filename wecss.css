@@ -1,0 +1,14 @@
+/* 這裡是 CSS，用於簡單的樣式設定 */
+body {
+    font-family: Arial, sans-serif;
+}
+#inputBox {
+    margin-bottom: 10px;
+}
+#itemList {
+    list-style-type: none;
+    padding: 0;
+}
+.item {
+    margin-bottom: 5px;
+}
